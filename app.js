@@ -35,9 +35,3 @@ function getWeather(){
     })
     .catch(err => console.log(err));
 }
-
-const colorb= document.querySelector('.colorbg');
-    colorb.addEventlistener('mousemove', runEvent);
-    function runEvent(e){
-      document.body.style.backgroundColor=`rgb(${e.offsetX},${e.offsetY},40)`;
-    }
